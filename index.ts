@@ -100,7 +100,7 @@ const blogDatabase = new aws.rds.Instance("blogDatabase".toLowerCase(), {
 export let dbConfig = {
     blog: {
         client: dbCommon.engine,
-        host: blogDatabase.endpoint.apply(endpoint => endpoint.replace(":3306", "")),
+        host: blogDatabase.endpoint.apply(endpoint => endpoint.replace(`:${dbCommon.port}`, "")),
         port: dbCommon.port,
         user: blogDatabase.username,
         password: blogDatabase.password,
