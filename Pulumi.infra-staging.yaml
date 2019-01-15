@@ -1,0 +1,7 @@
+config:
+  aws:region: us-west-2
+  infra:blogDatabasePassword:
+    secure: AAABAH5Gz5HA/adGad8mWWQLDON9dIVQXmOVOBVMi9PRStyRR4P/3L/59FzINwTWGn4=
+  infra:blogDatabaseUsername:
+    secure: AAABAHIETAxTwi+I884LpVDuk8h4e0RSG8ec4VuDQ34uGuFU
+  infra:identityStackName: broomevideo/identity-staging
